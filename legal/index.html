@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Legal documents, privacy policies, and terms of service for Huggler Holdings LLC applications.">
+    <meta name="author" content="Huggler Holdings LLC">
+    <title>Legal | Huggler Holdings LLC</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        /* Legal Hub Specific Styles */
+        .legal-hub {
+            padding-top: 120px;
+            min-height: 100vh;
+        }
+
+        .legal-intro {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto var(--spacing-2xl);
+        }
+
+        .legal-intro p {
+            color: var(--color-gray-500);
+            font-size: 1.125rem;
+        }
+
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-2xl);
+        }
+
+        .app-card {
+            background: var(--color-white);
+            border: 1px solid var(--color-gray-200);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-xl);
+            transition: all var(--transition-base);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .app-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .app-card__icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, var(--color-navy), var(--color-navy-light));
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: var(--spacing-md);
+            color: var(--color-white);
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .app-card__icon.gold {
+            background: linear-gradient(135deg, var(--color-gold), var(--color-bronze));
+        }
+
+        .app-card__icon.charcoal {
+            background: linear-gradient(135deg, var(--color-charcoal), var(--color-charcoal-light));
+        }
+
+        .app-card__name {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-charcoal);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .app-card__description {
+            font-size: 0.9375rem;
+            color: var(--color-gray-500);
+            margin-bottom: var(--spacing-md);
+            line-height: 1.6;
+        }
+
+        .app-card__links {
+            display: flex;
+            gap: var(--spacing-md);
+            padding-top: var(--spacing-md);
+            border-top: 1px solid var(--color-gray-200);
+        }
+
+        .app-card__link {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--color-navy);
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
+
+        .app-card__link:hover {
+            color: var(--color-gold);
+        }
+
+        .master-terms {
+            background: linear-gradient(135deg, var(--color-charcoal), var(--color-charcoal-light));
+            border-radius: var(--radius-xl);
+            padding: var(--spacing-2xl);
+            text-align: center;
+            margin-bottom: var(--spacing-2xl);
+        }
+
+        .master-terms h2 {
+            color: var(--color-white);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .master-terms p {
+            color: var(--color-gray-300);
+            margin-bottom: var(--spacing-lg);
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .master-terms .btn {
+            display: inline-flex;
+        }
+
+        .company-legal {
+            background: var(--color-gray-100);
+            border-radius: var(--radius-xl);
+            padding: var(--spacing-2xl);
+            text-align: center;
+        }
+
+        .company-legal h2 {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .company-legal p {
+            color: var(--color-gray-500);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .company-legal__links {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-md);
+            flex-wrap: wrap;
+        }
+
+        .company-legal__link {
+            padding: var(--spacing-sm) var(--spacing-lg);
+            background: var(--color-white);
+            border: 1px solid var(--color-gray-200);
+            border-radius: var(--radius-md);
+            font-weight: 500;
+            color: var(--color-charcoal);
+            text-decoration: none;
+            transition: all var(--transition-fast);
+        }
+
+        .company-legal__link:hover {
+            background: var(--color-charcoal);
+            color: var(--color-white);
+            border-color: var(--color-charcoal);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header scrolled" id="header">
+        <div class="container header-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">H</span>
+                <span class="logo-text">Huggler Holdings</span>
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html#about" class="nav-link">About</a></li>
+                    <li><a href="../index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle mobile menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="legal-hub">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Legal Center</span>
+                <h1 class="section-title">Legal Documents</h1>
+            </div>
+
+            <div class="legal-intro">
+                <p>Access privacy policies, terms of service, and legal documentation for Huggler Holdings LLC and our applications.</p>
+            </div>
+
+            <!-- Master Terms Section -->
+            <div class="master-terms">
+                <h2>Master Terms of Service</h2>
+                <p>View the global terms and conditions that govern all Huggler Holdings LLC applications and services.</p>
+                <a href="legal-master/terms-of-service.html" class="btn btn-primary">View Master Terms</a>
+            </div>
+
+            <!-- Application Legal Documents -->
+            <div class="section-header">
+                <h2 class="section-title">Application Documents</h2>
+                <p class="section-description">Privacy policies and terms for each of our applications</p>
+            </div>
+
+            <div class="apps-grid">
+                <div class="app-card">
+                    <div class="app-card__icon">1</div>
+                    <h3 class="app-card__name">Bladder Diary</h3>
+                    <p class="app-card__description">Track your bladder health with a secure, local-first diary application.</p>
+                    <div class="app-card__links">
+                        <a href="bladder-diary/privacy-policy.html" class="app-card__link">Privacy Policy</a>
+                        <a href="bladder-diary/terms-of-service.html" class="app-card__link">Terms of Service</a>
+                    </div>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-card__icon gold">2</div>
+                    <h3 class="app-card__name">App Two</h3>
+                    <p class="app-card__description">Coming soon. A new privacy-first application from Huggler Holdings.</p>
+                    <div class="app-card__links">
+                        <a href="app-two/privacy-policy.html" class="app-card__link">Privacy Policy</a>
+                        <a href="app-two/terms-of-service.html" class="app-card__link">Terms of Service</a>
+                    </div>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-card__icon charcoal">3</div>
+                    <h3 class="app-card__name">App Three</h3>
+                    <p class="app-card__description">Coming soon. A new privacy-first application from Huggler Holdings.</p>
+                    <div class="app-card__links">
+                        <a href="app-three/privacy-policy.html" class="app-card__link">Privacy Policy</a>
+                        <a href="app-three/terms-of-service.html" class="app-card__link">Terms of Service</a>
+                    </div>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-card__icon">4</div>
+                    <h3 class="app-card__name">App Four</h3>
+                    <p class="app-card__description">Coming soon. A new privacy-first application from Huggler Holdings.</p>
+                    <div class="app-card__links">
+                        <a href="app-four/privacy-policy.html" class="app-card__link">Privacy Policy</a>
+                        <a href="app-four/terms-of-service.html" class="app-card__link">Terms of Service</a>
+                    </div>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-card__icon gold">5</div>
+                    <h3 class="app-card__name">App Five</h3>
+                    <p class="app-card__description">Coming soon. A new privacy-first application from Huggler Holdings.</p>
+                    <div class="app-card__links">
+                        <a href="app-five/privacy-policy.html" class="app-card__link">Privacy Policy</a>
+                        <a href="app-five/terms-of-service.html" class="app-card__link">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Company Legal Documents -->
+            <div class="company-legal">
+                <h2>Company Legal Documents</h2>
+                <p>General legal documents for Huggler Holdings LLC corporate website.</p>
+                <div class="company-legal__links">
+                    <a href="../privacy-policy.html" class="company-legal__link">Company Privacy Policy</a>
+                    <a href="../terms-of-service.html" class="company-legal__link">Company Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="../index.html" class="logo footer-logo">
+                        <span class="logo-icon">H</span>
+                        <span class="logo-text">Huggler Holdings</span>
+                    </a>
+                    <p class="footer-description">
+                        Building cutting-edge digital solutions that empower businesses and consumers
+                        through innovation and technical excellence.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html#about">About Us</a></li>
+                        <li><a href="../index.html#services">Services</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="../index.html#services">Mobile Development</a></li>
+                        <li><a href="../index.html#services">Enterprise Solutions</a></li>
+                        <li><a href="../index.html#services">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="../terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="index.html">Legal Hub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Huggler Holdings LLC. All Rights Reserved.</p>
+                <div class="footer-contact">
+                    <a href="mailto:Contact@hugglerholdings.com">Contact@hugglerholdings.com</a>
+                    <span class="separator">|</span>
+                    <a href="tel:+12148140249">+1 (214) 814-0249</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../script.js"></script>
+</body>
+</html>

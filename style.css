@@ -965,6 +965,25 @@ p {
     margin-bottom: var(--spacing-xs);
 }
 
+/* Centered Contact Info */
+.contact-info-centered {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-2xl);
+    flex-wrap: wrap;
+}
+
+.contact-info-centered .contact-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 200px;
+}
+
+.contact-info-centered .contact-icon {
+    margin-bottom: var(--spacing-sm);
+}
+
 /* Contact Form */
 .contact-form-container {
     background: var(--color-white);

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | App Four</title>
+    <meta name="description" content="Terms of Service for App Four - A Huggler Holdings LLC application.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>H</text></svg>">
+
+    <style>
+        :root {
+            --color-bg: #fafaf9;
+            --color-bg-secondary: #f5f5f4;
+            --color-surface: rgba(255, 255, 255, 0.85);
+            --color-border: rgba(214, 211, 209, 0.6);
+            --color-text-primary: #1c1917;
+            --color-text-secondary: #57534e;
+            --color-text-tertiary: #a8a29e;
+            --color-accent: #78716c;
+            --color-accent-subtle: rgba(120, 113, 108, 0.1);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --space-xs: 0.25rem;
+            --space-sm: 0.5rem;
+            --space-md: 1rem;
+            --space-lg: 1.5rem;
+            --space-xl: 2rem;
+            --space-2xl: 3rem;
+            --space-3xl: 4rem;
+            --space-4xl: 6rem;
+            --radius-sm: 0.5rem;
+            --radius-lg: 1rem;
+            --radius-xl: 1.5rem;
+            --radius-full: 9999px;
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+            --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--color-text-primary);
+            background-color: var(--color-bg);
+            -webkit-font-smoothing: antialiased;
+            min-height: 100vh;
+        }
+
+        .bg-pattern {
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+            background-color: var(--color-bg);
+            background-image:
+                linear-gradient(to right, rgba(168, 162, 158, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(168, 162, 158, 0.03) 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+
+        .nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: var(--space-md) var(--space-lg);
+            background: rgba(250, 250, 249, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .nav__container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav__brand {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            text-decoration: none;
+            color: var(--color-text-primary);
+            font-weight: 600;
+            font-size: 0.9375rem;
+        }
+
+        .nav__brand-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--color-text-primary);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.875rem;
+        }
+
+        .nav__links {
+            display: flex;
+            gap: var(--space-sm);
+        }
+
+        .nav__link {
+            font-size: 0.875rem;
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            padding: var(--space-sm) var(--space-md);
+            border-radius: var(--radius-full);
+            transition: all var(--transition-fast);
+        }
+
+        .nav__link:hover {
+            color: var(--color-text-primary);
+            background: var(--color-accent-subtle);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: var(--space-3xl) var(--space-lg);
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: var(--space-4xl);
+        }
+
+        .hero__badge {
+            display: inline-flex;
+            align-items: center;
+            padding: var(--space-xs) var(--space-md);
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-full);
+            font-size: 0.75rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--color-text-secondary);
+            margin-bottom: var(--space-xl);
+        }
+
+        .hero__title {
+            font-size: clamp(2rem, 6vw, 3rem);
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            color: var(--color-text-primary);
+            margin-bottom: var(--space-lg);
+        }
+
+        .hero__subtitle {
+            font-size: 1.125rem;
+            color: var(--color-text-secondary);
+            max-width: 540px;
+            margin: 0 auto;
+        }
+
+        .policy {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-xl);
+        }
+
+        .policy__header {
+            text-align: center;
+            padding-bottom: var(--space-xl);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .policy__title {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: var(--space-sm);
+        }
+
+        .policy__date {
+            font-size: 0.875rem;
+            color: var(--color-text-tertiary);
+        }
+
+        .policy__intro {
+            font-size: 1.0625rem;
+            color: var(--color-text-secondary);
+            line-height: 1.7;
+        }
+
+        .master-terms-notice {
+            background: var(--color-bg-secondary);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            text-align: center;
+        }
+
+        .master-terms-notice p {
+            color: var(--color-text-secondary);
+            margin-bottom: var(--space-md);
+        }
+
+        .master-terms-notice a {
+            color: var(--color-text-primary);
+            font-weight: 500;
+        }
+
+        .card {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-xl);
+            padding: var(--space-xl);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .card__number {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--color-text-tertiary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: var(--space-xs);
+        }
+
+        .card__title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            margin-bottom: var(--space-md);
+        }
+
+        .card__text {
+            color: var(--color-text-secondary);
+            line-height: 1.7;
+        }
+
+        .card__text strong {
+            color: var(--color-text-primary);
+            font-weight: 500;
+        }
+
+        .card__list {
+            list-style: none;
+            margin-top: var(--space-md);
+        }
+
+        .card__list-item {
+            position: relative;
+            padding-left: var(--space-lg);
+            margin-bottom: var(--space-sm);
+            color: var(--color-text-secondary);
+        }
+
+        .card__list-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.6em;
+            width: 6px;
+            height: 6px;
+            background: var(--color-accent);
+            border-radius: 50%;
+            opacity: 0.6;
+        }
+
+        .contact {
+            text-align: center;
+            padding: var(--space-2xl);
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-xl);
+        }
+
+        .contact__title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: var(--space-sm);
+        }
+
+        .contact__text {
+            color: var(--color-text-secondary);
+            margin-bottom: var(--space-lg);
+        }
+
+        .contact__email {
+            display: inline-flex;
+            padding: var(--space-md) var(--space-xl);
+            background: var(--color-text-primary);
+            color: white;
+            text-decoration: none;
+            border-radius: var(--radius-full);
+            font-weight: 500;
+            transition: all var(--transition-fast);
+        }
+
+        .contact__email:hover {
+            background: var(--color-text-secondary);
+        }
+
+        .footer {
+            text-align: center;
+            padding: var(--space-3xl) var(--space-lg);
+            margin-top: var(--space-2xl);
+            border-top: 1px solid var(--color-border);
+        }
+
+        .footer__text {
+            font-size: 0.875rem;
+            color: var(--color-text-tertiary);
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-pattern" aria-hidden="true"></div>
+
+    <nav class="nav">
+        <div class="nav__container">
+            <a href="../index.html" class="nav__brand">
+                <span class="nav__brand-icon">H</span>
+                <span>Huggler Holdings</span>
+            </a>
+            <div class="nav__links">
+                <a href="privacy-policy.html" class="nav__link">Privacy</a>
+                <a href="#contact" class="nav__link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="hero">
+            <div class="hero__badge">App Four</div>
+            <h1 class="hero__title">Terms of Service</h1>
+            <p class="hero__subtitle">App-specific terms and conditions for using App Four.</p>
+        </header>
+
+        <article class="policy">
+            <header class="policy__header">
+                <h2 class="policy__title">Terms of Service</h2>
+                <p class="policy__date">Last Updated: January 15, 2026</p>
+            </header>
+
+            <section>
+                <p class="policy__intro">
+                    These Terms of Service ("App Terms") apply specifically to your use of the App Four application. These App Terms supplement and are in addition to the Master Terms of Service of Huggler Holdings LLC.
+                </p>
+            </section>
+
+            <section class="master-terms-notice">
+                <p>These App Terms are governed by our Master Terms of Service.</p>
+                <a href="../legal-master/terms-of-service.html">View Master Terms of Service</a>
+            </section>
+
+            <section class="card">
+                <span class="card__number">Section 1</span>
+                <h3 class="card__title">Intended Use</h3>
+                <p class="card__text">
+                    App Four is intended for personal, non-commercial use. The specific features and functionality of this application are subject to these terms and our master terms of service.
+                </p>
+            </section>
+
+            <section class="card">
+                <span class="card__number">Section 2</span>
+                <h3 class="card__title">User Content</h3>
+                <p class="card__text">
+                    You retain ownership of any content you create within the app. You are solely responsible for the accuracy and legality of all content you create, upload, or share through the application.
+                </p>
+            </section>
+
+            <section class="card">
+                <span class="card__number">Section 3</span>
+                <h3 class="card__title">Data Responsibility</h3>
+                <p class="card__text">
+                    Because your data is stored locally on your device, you are responsible for maintaining backups if you wish to preserve your data. Uninstalling the app, resetting your device, or device failure may result in permanent loss of your data. We are not responsible for any data loss.
+                </p>
+            </section>
+
+            <section class="card">
+                <span class="card__number">Section 4</span>
+                <h3 class="card__title">App-Specific Restrictions</h3>
+                <p class="card__text">
+                    In addition to the restrictions in our Master Terms of Service, you agree not to use this application for any purpose that violates applicable laws or regulations, or to engage in any activity that could harm the app, its users, or Huggler Holdings LLC.
+                </p>
+            </section>
+
+            <section id="contact" class="contact">
+                <h3 class="contact__title">Contact Us</h3>
+                <p class="contact__text">
+                    For questions about these terms or App Four, please contact us.
+                </p>
+                <a href="mailto:contact@hugglerholdings.com" class="contact__email">
+                    contact@hugglerholdings.com
+                </a>
+            </section>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">
+            &copy; 2026 Huggler Holdings LLC | Registered in the State of Texas, USA
+        </p>
+    </footer>
+</body>
+</html>
