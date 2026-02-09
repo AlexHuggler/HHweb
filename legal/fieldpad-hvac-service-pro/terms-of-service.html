@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Use | FieldPad: HVAC Service Pro</title>
+    <meta name="description" content="Terms of Use for FieldPad: HVAC Service Pro - A Huggler Holdings LLC application.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>H</text></svg>">
+
+    <style>
+        :root {
+            --color-bg: #fafaf9;
+            --color-bg-secondary: #f5f5f4;
+            --color-surface: rgba(255, 255, 255, 0.85);
+            --color-surface-hover: rgba(255, 255, 255, 0.95);
+            --color-border: rgba(214, 211, 209, 0.6);
+            --color-border-strong: rgba(168, 162, 158, 0.4);
+            --color-text-primary: #1c1917;
+            --color-text-secondary: #57534e;
+            --color-text-tertiary: #a8a29e;
+            --color-accent: #78716c;
+            --color-accent-subtle: rgba(120, 113, 108, 0.1);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --space-xs: 0.25rem;
+            --space-sm: 0.5rem;
+            --space-md: 1rem;
+            --space-lg: 1.5rem;
+            --space-xl: 2rem;
+            --space-2xl: 3rem;
+            --space-3xl: 4rem;
+            --space-4xl: 6rem;
+            --radius-sm: 0.5rem;
+            --radius-md: 0.75rem;
+            --radius-lg: 1rem;
+            --radius-xl: 1.5rem;
+            --radius-full: 9999px;
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+            --shadow-lg: 0 10px 15px -3x rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+            --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--color-text-primary);
+            background-color: var(--color-bg);
+            -webkit-font-smoothing: antialiased;
+            min-height: 100vh;
+        }
+
+        .bg-pattern {
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+            background-color: var(--color-bg);
+            background-image:
+                linear-gradient(to right, rgba(168, 162, 158, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(168, 162, 158, 0.03) 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+
+        .nav { position: sticky; top: 0; z-index: 100; padding: var(--space-md) var(--space-lg); background: rgba(250, 250, 249, 0.8); backdrop-filter: blur(20px); border-bottom: 1px solid var(--color-border); }
+        .nav__container { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+        .nav__brand { display: flex; align-items: center; gap: var(--space-sm); text-decoration: none; color: var(--color-text-primary); font-weight: 600; font-size: 0.9375rem; }
+        .nav__brand-icon { width: 32px; height: 32px; background: var(--color-text-primary); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; color: white; font-size: 0.875rem; }
+        .nav__links { display: flex; gap: var(--space-sm); }
+        .nav__link { font-size: 0.875rem; color: var(--color-text-secondary); text-decoration: none; padding: var(--space-sm) var(--space-md); border-radius: var(--radius-full); transition: all var(--transition-fast); }
+        .nav__link:hover { color: var(--color-text-primary); background: var(--color-accent-subtle); }
+
+        .container { max-width: 800px; margin: 0 auto; padding: var(--space-3xl) var(--space-lg); }
+        .hero { text-align: center; margin-bottom: var(--space-4xl); }
+        .hero__badge { display: inline-flex; align-items: center; gap: var(--space-sm); padding: var(--space-xs) var(--space-md); background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-secondary); margin-bottom: var(--space-xl); }
+        .hero__title { font-size: clamp(2rem, 6vw, 3rem); font-weight: 600; letter-spacing: -0.03em; line-height: 1.1; color: var(--color-text-primary); margin-bottom: var(--space-lg); }
+        .hero__subtitle { font-size: 1.125rem; color: var(--color-text-secondary); max-width: 540px; margin: 0 auto; }
+
+        .policy { display: flex; flex-direction: column; gap: var(--space-xl); }
+        .policy__header { text-align: center; padding-bottom: var(--space-xl); border-bottom: 1px solid var(--color-border); }
+        .policy__title { font-size: 1.75rem; font-weight: 600; margin-bottom: var(--space-sm); }
+        .policy__date { font-size: 0.875rem; color: var(--color-text-tertiary); }
+        .policy__intro { font-size: 1.0625rem; color: var(--color-text-secondary); line-height: 1.7; }
+
+        .card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: var(--space-xl); box-shadow: var(--shadow-sm); }
+        .card__number { font-size: 0.75rem; font-weight: 600; color: var(--color-text-tertiary); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: var(--space-xs); }
+        .card__title { font-size: 1.25rem; font-weight: 600; color: var(--color-text-primary); margin-bottom: var(--space-md); }
+        .card__subtitle { font-size: 1.0625rem; font-weight: 600; color: var(--color-text-primary); margin-top: var(--space-lg); margin-bottom: var(--space-sm); }
+        .card__text { color: var(--color-text-secondary); line-height: 1.7; }
+        .card__text strong { color: var(--color-text-primary); font-weight: 500; }
+        .card__text a { color: var(--color-text-primary); font-weight: 500; }
+        .card__list { list-style: none; margin-top: var(--space-md); }
+        .card__list-item { position: relative; padding-left: var(--space-lg); margin-bottom: var(--space-sm); color: var(--color-text-secondary); }
+        .card__list-item::before { content: ''; position: absolute; left: 0; top: 0.6em; width: 6px; height: 6px; background: var(--color-accent); border-radius: 50%; opacity: 0.6; }
+        .card__note { margin-top: var(--space-md); padding: var(--space-md); background: var(--color-bg-secondary); border-radius: var(--radius-md); font-size: 0.9375rem; color: var(--color-text-secondary); line-height: 1.7; }
+
+        .fee-table { width: 100%; border-collapse: collapse; margin-top: var(--space-md); }
+        .fee-table th, .fee-table td { padding: var(--space-sm) var(--space-md); text-align: left; border-bottom: 1px solid var(--color-border); font-size: 0.9375rem; color: var(--color-text-secondary); }
+        .fee-table th { font-weight: 600; color: var(--color-text-primary); background: var(--color-bg-secondary); }
+
+        .contact { text-align: center; padding: var(--space-2xl); background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-xl); }
+        .contact__title { font-size: 1.25rem; font-weight: 600; margin-bottom: var(--space-sm); }
+        .contact__text { color: var(--color-text-secondary); margin-bottom: var(--space-lg); }
+        .contact__email { display: inline-flex; align-items: center; gap: var(--space-sm); padding: var(--space-md) var(--space-xl); background: var(--color-text-primary); color: white; text-decoration: none; border-radius: var(--radius-full); font-weight: 500; transition: all var(--transition-fast); }
+        .contact__email:hover { background: var(--color-text-secondary); }
+
+        .footer { text-align: center; padding: var(--space-3xl) var(--space-lg); margin-top: var(--space-2xl); border-top: 1px solid var(--color-border); }
+        .footer__text { font-size: 0.875rem; color: var(--color-text-tertiary); }
+    </style>
+</head>
+<body>
+    <div class="bg-pattern" aria-hidden="true"></div>
+
+    <nav class="nav">
+        <div class="nav__container">
+            <a href="../index.html" class="nav__brand">
+                <span class="nav__brand-icon">H</span>
+                <span>Huggler Holdings</span>
+            </a>
+            <div class="nav__links">
+                <a href="privacy-policy.html" class="nav__link">Privacy</a>
+                <a href="#contact" class="nav__link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="hero">
+            <div class="hero__badge">FieldPad: HVAC Service Pro</div>
+            <h1 class="hero__title">Terms of Use</h1>
+            <p class="hero__subtitle">Terms and conditions governing your use of the FieldPad mobile application.</p>
+        </header>
+
+        <article class="policy">
+            <header class="policy__header">
+                <h2 class="policy__title">Terms of Use</h2>
+                <p class="policy__date">Last Updated: February 9, 2026</p>
+            </header>
+
+            <section>
+                <p class="policy__intro">
+                    These Terms of Use ("Terms") govern your use of the FieldPad mobile application ("App") provided by Huggler Holdings LLC ("we", "us", "our"). By downloading, installing, or using the App, you agree to these Terms. You must be at least 18 years old, or the age of majority in your jurisdiction, to use this App.
+                </p>
+            </section>
+
+            <!-- Section 1: Subscription Terms -->
+            <section class="card">
+                <span class="card__number">Section 1</span>
+                <h3 class="card__title">Subscription Terms</h3>
+
+                <h4 class="card__subtitle">1.1 Free Tier</h4>
+                <p class="card__text">FieldPad offers a free tier with the following usage limits:</p>
+                <table class="fee-table">
+                    <thead>
+                        <tr><th>Feature</th><th>Free Limit</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Clients</td><td>5</td></tr>
+                        <tr><td>Jobs</td><td>10</td></tr>
+                        <tr><td>Invoices</td><td>10</td></tr>
+                        <tr><td>Estimates</td><td>5</td></tr>
+                        <tr><td>Compliance Logs</td><td>20</td></tr>
+                        <tr><td>Cylinders</td><td>10</td></tr>
+                        <tr><td>A2L Compliance Logs</td><td>5</td></tr>
+                        <tr><td>Invoice Shares</td><td>5 (lifetime)</td></tr>
+                        <tr><td>Estimate Shares</td><td>10 (lifetime)</td></tr>
+                        <tr><td>PDF Invoice Generation</td><td>8 (lifetime)</td></tr>
+                        <tr><td>OCR Cylinder Scans</td><td>15 (lifetime)</td></tr>
+                    </tbody>
+                </table>
+
+                <h4 class="card__subtitle">1.2 FieldPad Pro Subscription</h4>
+                <p class="card__text">FieldPad Pro removes all count limits and unlocks additional features:</p>
+                <ul class="card__list">
+                    <li class="card__list-item">Unlimited clients, jobs, invoices, estimates, compliance logs, and cylinders</li>
+                    <li class="card__list-item">Unlimited invoice and estimate sharing</li>
+                    <li class="card__list-item">Unlimited PDF generation and OCR scanning</li>
+                    <li class="card__list-item">Data export (JSON/CSV)</li>
+                    <li class="card__list-item">EPA compliance log export</li>
+                    <li class="card__list-item">Recurring job scheduling</li>
+                    <li class="card__list-item">Business logo on invoices</li>
+                    <li class="card__list-item">Full digital signature images on PDFs (no watermark)</li>
+                </ul>
+                <div class="card__note">
+                    <strong>Note:</strong> iCloud sync runs automatically for all users via SwiftData+CloudKit &mdash; your data syncs to your private iCloud container regardless of subscription tier. FieldPad Pro unlocks Sync Status &amp; Controls (sync status monitoring, last synced timestamp, and manual sync trigger), which provide visibility into sync activity but do not affect the underlying sync behavior.
+                </div>
+
+                <h4 class="card__subtitle">1.3 Billing</h4>
+                <ul class="card__list">
+                    <li class="card__list-item">Subscriptions are billed through Apple's App Store</li>
+                    <li class="card__list-item">Subscription auto-renews unless cancelled at least 24 hours before the end of the current period</li>
+                    <li class="card__list-item">Payment is charged to your Apple ID account at confirmation of purchase</li>
+                    <li class="card__list-item">Subscription management and cancellation are handled through your App Store account settings</li>
+                </ul>
+
+                <h4 class="card__subtitle">1.4 Refunds</h4>
+                <p class="card__text">Refund requests must be directed to Apple per App Store policies.</p>
+            </section>
+
+            <!-- Section 2: Free Tier Behavior -->
+            <section class="card">
+                <span class="card__number">Section 2</span>
+                <h3 class="card__title">Free Tier Behavior</h3>
+                <ul class="card__list">
+                    <li class="card__list-item">Count-limited features display usage progress and block new record creation when limits are reached</li>
+                    <li class="card__list-item">Pro-only features (data export, compliance log export, recurring jobs, business logo) are unavailable on the free tier</li>
+                    <li class="card__list-item">Free users' invoice PDFs display watermark text where signatures would appear on Pro PDFs</li>
+                    <li class="card__list-item">All locally stored data remains accessible regardless of subscription status &mdash; downgrading does not delete your data</li>
+                    <li class="card__list-item">Existing records beyond free limits remain viewable and editable; only creation of new records beyond the limit is blocked</li>
+                </ul>
+
+                <h4 class="card__subtitle">2.1 Subscription Expiry</h4>
+                <p class="card__text">If your Pro subscription expires or is cancelled:</p>
+                <ul class="card__list">
+                    <li class="card__list-item"><strong>All existing data is preserved</strong> &mdash; no records are deleted</li>
+                    <li class="card__list-item"><strong>Read and edit access:</strong> You can continue to view and edit all existing records, including those beyond free tier limits</li>
+                    <li class="card__list-item"><strong>Creation limits re-enforced:</strong> New record creation is subject to free tier limits</li>
+                    <li class="card__list-item"><strong>Pro-only features locked:</strong> Data export, compliance log export, recurring job creation, and business logo features require re-subscription</li>
+                    <li class="card__list-item"><strong>In-progress operations:</strong> If a Pro feature is actively in use when the subscription expires, the current operation completes normally; subsequent attempts will prompt for re-subscription</li>
+                </ul>
+            </section>
+
+            <!-- Section 3: EPA Data Accuracy and Compliance Disclaimer -->
+            <section class="card">
+                <span class="card__number">Section 3</span>
+                <h3 class="card__title">EPA Data Accuracy and Compliance Disclaimer</h3>
+                <div class="card__note"><strong>IMPORTANT &mdash; PLEASE READ CAREFULLY</strong></div>
+
+                <h4 class="card__subtitle">3.1 Record-Keeping Tool Only</h4>
+                <p class="card__text">FieldPad is a <strong>record-keeping and calculation tool</strong>. It is <strong>not</strong> a substitute for professional legal, regulatory, or compliance advice. The App does not certify, guarantee, or verify EPA compliance.</p>
+
+                <h4 class="card__subtitle">3.2 User Responsibility for Data Entry</h4>
+                <p class="card__text"><strong>All compliance data is manually entered by you.</strong> The App performs calculations based on the data you provide but does not independently verify the accuracy of your input. Specifically:</p>
+                <ul class="card__list">
+                    <li class="card__list-item">Refrigerant weights (pounds recovered, recharged) are entered by you</li>
+                    <li class="card__list-item">Equipment charge amounts and specifications are entered by you</li>
+                    <li class="card__list-item">Leak test results and repair records are entered by you</li>
+                    <li class="card__list-item">Technician certification information is entered by you</li>
+                </ul>
+                <p class="card__text" style="margin-top: var(--space-md);"><strong>You are solely responsible for the accuracy of all data entered into the App.</strong></p>
+
+                <h4 class="card__subtitle">3.3 Leak Rate Calculations</h4>
+                <p class="card__text">The App calculates leak rates using EPA Section 608 and AIM Act Subpart C formulas applied to data you manually enter. These calculations:</p>
+                <ul class="card__list">
+                    <li class="card__list-item">Are performed <strong>on-demand</strong> when you log a recharge event &mdash; they are <strong>not</strong> real-time sensor-based monitoring</li>
+                    <li class="card__list-item">Use Method 1 (annualized) or Method 2 (screening) formulas as defined by EPA regulations</li>
+                    <li class="card__list-item">Compare results against applicable EPA thresholds (e.g., 20% for commercial refrigeration; 15% for comfort cooling under Section 608, 10% under Subpart C)</li>
+                    <li class="card__list-item">Are only as accurate as the data you enter</li>
+                </ul>
+                <p class="card__text" style="margin-top: var(--space-md);"><strong>The App does not connect to any sensors, IoT devices, or monitoring equipment.</strong> Leak rate "detection" in the App means calculation from your manually entered service data, not automated environmental sensing.</p>
+
+                <h4 class="card__subtitle">3.4 Notification Timing</h4>
+                <p class="card__text">The App schedules local notifications (e.g., repair deadline reminders, inspection due alerts, invoice reminders) based on time-based scheduling, <strong>not real-time monitoring</strong>. Notifications:</p>
+                <ul class="card__list">
+                    <li class="card__list-item">Are scheduled using iOS UNUserNotificationCenter at the time you create or update records</li>
+                    <li class="card__list-item">May be delayed by iOS power management, Do Not Disturb mode, or device restart</li>
+                    <li class="card__list-item">Are not guaranteed to arrive at the exact scheduled time</li>
+                    <li class="card__list-item">Should not be relied upon as your sole reminder system for EPA compliance deadlines</li>
+                </ul>
+
+                <h4 class="card__subtitle">3.5 A2L Safety Checklists</h4>
+                <p class="card__text">A2L refrigerant safety checklists in the App are informational aids. The App tracks six mandatory safety items for A2L refrigerant service: dissipation confirmed, spark-free tools verified, ventilation verified, PPE verified, A2L-rated leak detector used, and equipment grounded. An optional seventh item &mdash; emergency plan reviewed &mdash; may also be recorded. These checklists:</p>
+                <ul class="card__list">
+                    <li class="card__list-item">Do not replace proper safety training</li>
+                    <li class="card__list-item">Do not replace manufacturer-specific handling guidelines</li>
+                    <li class="card__list-item">Do not substitute for compliance with ASHRAE 34 safety classifications</li>
+                    <li class="card__list-item">Are provided to assist your professional judgment, not to replace it</li>
+                </ul>
+
+                <h4 class="card__subtitle">3.6 Verification Test Deadline Warnings</h4>
+                <p class="card__text">The App displays informational warnings when follow-up verification tests are recorded past the regulatory deadline window (10 days for Subpart C, 30 days for Section 608). These warnings are <strong>informational only</strong> and do not block test submission.</p>
+
+                <h4 class="card__subtitle">3.7 Compliance Recommendations</h4>
+                <p class="card__text">Leak rate threshold comparisons, repair deadline calculations, inspection scheduling, chronic leaker detection, and all other compliance features are provided as aids to your professional judgment as a certified technician. Inspection frequency may be automatically escalated when leak rates exceed regulatory thresholds, and de-escalated after four consecutive compliant quarterly inspections. These scheduling adjustments are recommendations only and do not replace your obligation to follow EPA-mandated inspection intervals. <strong>Always verify compliance requirements with the EPA, your state regulatory agency, or a qualified compliance professional.</strong></p>
+            </section>
+
+            <!-- Section 4: Service Limitations -->
+            <section class="card">
+                <span class="card__number">Section 4</span>
+                <h3 class="card__title">Service Limitations</h3>
+
+                <h4 class="card__subtitle">4.1 Data Storage &amp; Sync</h4>
+                <ul class="card__list">
+                    <li class="card__list-item">FieldPad stores all data locally on your device using SwiftData, with automatic iCloud sync via CloudKit</li>
+                    <li class="card__list-item">Your data syncs to your private iCloud container when connectivity is available, providing cloud backup and cross-device access</li>
+                    <li class="card__list-item">If your device is lost, damaged, or reset, your data can be recovered from iCloud on a new device</li>
+                    <li class="card__list-item">Local data availability depends on your device storage and condition</li>
+                    <li class="card__list-item">We recommend periodic data exports via the App's built-in export feature for additional backup</li>
+                </ul>
+
+                <h4 class="card__subtitle">4.2 Network-Dependent Features</h4>
+                <p class="card__text">The following features require an internet connection:</p>
+                <ul class="card__list">
+                    <li class="card__list-item">Subscription purchase and validation (via RevenueCat / Apple App Store)</li>
+                    <li class="card__list-item">Address autocomplete suggestions (via Apple MapKit)</li>
+                    <li class="card__list-item">Sending emails with PDF attachments (via iOS Mail)</li>
+                </ul>
+                <p class="card__text" style="margin-top: var(--space-md);">All other features &mdash; including job management, invoicing, compliance logging, OCR scanning, PDF generation, and leak rate calculations &mdash; work fully offline.</p>
+
+                <h4 class="card__subtitle">4.3 No Warranty</h4>
+                <p class="card__text" style="text-transform: uppercase;">THE APP IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED, ERROR-FREE, OR FREE OF HARMFUL COMPONENTS.</p>
+            </section>
+
+            <!-- Section 5: Intellectual Property -->
+            <section class="card">
+                <span class="card__number">Section 5</span>
+                <h3 class="card__title">Intellectual Property</h3>
+                <ul class="card__list">
+                    <li class="card__list-item">FieldPad and all associated trademarks, logos, and content are the property of Huggler Holdings LLC</li>
+                    <li class="card__list-item">You are granted a limited, non-exclusive, non-transferable license to use the App for personal or business purposes</li>
+                    <li class="card__list-item">You may not reverse engineer, decompile, or disassemble the App</li>
+                </ul>
+            </section>
+
+            <!-- Section 6: Limitation of Liability -->
+            <section class="card">
+                <span class="card__number">Section 6</span>
+                <h3 class="card__title">Limitation of Liability</h3>
+                <p class="card__text" style="text-transform: uppercase;">TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW:</p>
+                <ul class="card__list">
+                    <li class="card__list-item">We are not liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the App</li>
+                    <li class="card__list-item">We are not liable for any loss of data, revenue, or profits</li>
+                    <li class="card__list-item"><strong>We are not liable for any EPA fines, penalties, enforcement actions, or compliance failures</strong>, whether resulting from inaccurate data entry, calculation errors, missed notifications, or any other use of the App</li>
+                    <li class="card__list-item">We are not liable for any injuries, property damage, or safety incidents related to refrigerant handling, even if the App's A2L safety checklists were completed</li>
+                    <li class="card__list-item">Our total liability shall not exceed the amount you paid for the App in the 12 months preceding the claim</li>
+                    <li class="card__list-item">We are not liable for any issues arising from Apple's App Store services</li>
+                    <li class="card__list-item">We are not liable for data loss resulting from device failure, loss, or damage</li>
+                    <li class="card__list-item">We are not liable for data loss or data inconsistencies resulting from iCloud sync failures, sync conflicts, Apple service outages, or iCloud storage limitations</li>
+                </ul>
+            </section>
+
+            <!-- Section 7: Indemnification -->
+            <section class="card">
+                <span class="card__number">Section 7</span>
+                <h3 class="card__title">Indemnification</h3>
+                <p class="card__text">You agree to indemnify and hold harmless Huggler Holdings LLC from any claims, damages, losses, or expenses (including reasonable attorney fees) arising from:</p>
+                <ul class="card__list">
+                    <li class="card__list-item">Your use of the App</li>
+                    <li class="card__list-item">Your violation of these Terms</li>
+                    <li class="card__list-item">Your violation of any EPA regulation or other applicable law</li>
+                    <li class="card__list-item">Inaccurate data you enter into the App</li>
+                </ul>
+            </section>
+
+            <!-- Section 8: Termination -->
+            <section class="card">
+                <span class="card__number">Section 8</span>
+                <h3 class="card__title">Termination</h3>
+                <ul class="card__list">
+                    <li class="card__list-item">You may stop using the App at any time by deleting it from your device</li>
+                    <li class="card__list-item">We may terminate your access if you violate these Terms</li>
+                    <li class="card__list-item">Upon termination, your locally stored data remains on your device and your iCloud data remains in your iCloud account</li>
+                    <li class="card__list-item">Subscription cancellation does not delete your data</li>
+                </ul>
+            </section>
+
+            <!-- Section 9: Governing Law -->
+            <section class="card">
+                <span class="card__number">Section 9</span>
+                <h3 class="card__title">Governing Law</h3>
+                <p class="card__text">These Terms shall be governed by and construed in accordance with the laws of the State of Texas, without regard to its conflict of law provisions.</p>
+            </section>
+
+            <!-- Section 10: Dispute Resolution -->
+            <section class="card">
+                <span class="card__number">Section 10</span>
+                <h3 class="card__title">Dispute Resolution</h3>
+                <p class="card__text">Any dispute arising from or relating to these Terms or your use of the App shall be resolved through binding arbitration administered under the rules of the American Arbitration Association, conducted in Dallas County, Texas. You agree to waive any right to participate in a class action lawsuit or class-wide arbitration. Either party may seek injunctive or equitable relief in any court of competent jurisdiction. Claims eligible for small claims court may be filed there instead of arbitration. You may opt out of this arbitration provision by sending written notice to <a href="mailto:fieldpad@hugglerholdings.com">fieldpad@hugglerholdings.com</a> within 30 days of first downloading the App.</p>
+            </section>
+
+            <!-- Section 11: Severability -->
+            <section class="card">
+                <span class="card__number">Section 11</span>
+                <h3 class="card__title">Severability</h3>
+                <p class="card__text">If any provision of these Terms is found to be unenforceable, the remaining provisions will continue in full force and effect.</p>
+            </section>
+
+            <!-- Section 12: Changes to These Terms -->
+            <section class="card">
+                <span class="card__number">Section 12</span>
+                <h3 class="card__title">Changes to These Terms</h3>
+                <p class="card__text">We may update these Terms periodically. We will notify you of material changes by updating the "Last Updated" date. Continued use of the App after changes constitutes acceptance of the updated Terms.</p>
+            </section>
+
+            <section id="contact" class="contact">
+                <h3 class="contact__title">Contact Us</h3>
+                <p class="contact__text">For questions about these Terms, please contact us.</p>
+                <a href="mailto:fieldpad@hugglerholdings.com" class="contact__email">fieldpad@hugglerholdings.com</a>
+            </section>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">&copy; 2026 Huggler Holdings LLC | Registered in the State of Texas, USA</p>
+    </footer>
+</body>
+</html>
